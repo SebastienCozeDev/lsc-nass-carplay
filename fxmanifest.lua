@@ -10,9 +10,9 @@ version '1.2.0'
 
 server_scripts { 'server/*.lua' }
 
-client_scripts { 'client/en/*.lua' }
+client_scripts { 'client/fr/*.lua' }
 
-ui_page 'html/en/index.html' -- Replace en by other language if you want. Available language: en, es, fr
+ui_page 'html/fr/index.html' -- Replace en by other language if you want. Available language: en, es, fr
 files { 
 	"html/*",
 }
