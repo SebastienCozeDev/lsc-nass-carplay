@@ -9,7 +9,7 @@ version '1.1.0'
 
 server_scripts { 'server/*.lua' }
 
-client_scripts { 'client/*.lua' }
+client_scripts { 'client/en/*.lua' }
 
 ui_page 'html/en/index.html'
 files { 
