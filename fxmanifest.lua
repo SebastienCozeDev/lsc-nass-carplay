@@ -11,9 +11,9 @@ server_scripts { 'server/*.lua' }
 
 client_scripts { 'client/*.lua' }
 
-ui_page 'html/index.html'
+ui_page 'html/en/index.html'
 files { 
-  "html/*",
+	"html/*",
 }
 
 dependencies {
