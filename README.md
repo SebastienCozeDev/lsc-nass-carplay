@@ -14,11 +14,17 @@
 - Onesync (uses state bags)
 - [xsound](https://github.com/Xogy/xsound)
 
+## Installation
+
+- Copy this repository into the `resources` folder.
+- Add `ensure lsc-nass-carplay` in your `config.cfg` file.
+- Update `fxmanifest.lua` to change the language if you want.
+- Remove the others languages folder if you want.
 
 ## Extra Information
 
-
- Please leave any issues you may have here on github
+Please leave any issues you may have here on GitHub
 
 # Support
+
 Join our discord <a href='https://discord.gg/fz655NHeDq'>HERE</a> for additional scripts and support!
