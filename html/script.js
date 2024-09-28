@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         songNameElement.textContent = data.title;
         
         var authorElement = document.getElementById("author");
-        authorElement.textContent = "par " + data.author_name;
+        authorElement.textContent = "by " + data.author_name;
 
         document.getElementById('musicthumbanil').src = data.thumbnail_url;
 		
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $.getJSON('https://noembed.com/embed', {format: 'json', url: songLink}, function (data) {
 			var songListItem = document.createElement("li");
-			songListItem.textContent = data.title + " par " + data.author_name;
+			songListItem.textContent = data.title + " by " + data.author_name;
 
 			var songList = document.querySelector(".nextcontainer .song-list");
 			songList.appendChild(songListItem);
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
           vehStr: vehIdStr,
           queuePos: Array.from(songList.children).indexOf(songListItem)+1,
           link: songLink,
-          songName: data.title + " par " + data.author_name,
+          songName: data.title + " by " + data.author_name,
           
         }));
       });
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         vehStr: vehIdStr,
         link: songLink,
         queuePos: Array.from(songList.children).indexOf(songListItem)+1,
-        songName: data.title + " par " + data.author_name,
+        songName: data.title + " de " + data.author_name,
       }));
       
 	});
@@ -296,7 +296,7 @@ function backSong(){
 
 function resetPlayback(){
   var songNameElement = document.getElementById("songname");
-  songNameElement.textContent = "No media present";
+  songNameElement.textContent = "Aucun media présent";
   
   var authorElement = document.getElementById("author");
   authorElement.textContent = "";
@@ -333,17 +333,3 @@ function updateMusicProg(curr, total) {
   const lengthSeconds = Math.floor(total % 60);
   songLength.textContent = `${lengthMinutes}:${lengthSeconds.toString().padStart(2, '0')}`;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

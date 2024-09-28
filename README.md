@@ -16,10 +16,8 @@
 
 ## Installation
 
-- Copy this repository into the `resources` folder.
-- Add `ensure lsc-nass-carplay` in your `config.cfg` file.
-- Update `fxmanifest.lua` to change the language if you want.
-- Remove the others languages folder if you want.
+1. Copy this repository into the `resources` folder.
+2. Add `ensure lsc-nass-carplay` in your `config.cfg` file.
 
 ## Extra Information
 
